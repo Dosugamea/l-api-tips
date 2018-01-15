@@ -5,6 +5,7 @@
 |Open GroupPost|グループの投稿を開く|line://group/home/posts/post?homeId=[groupID]&postId=[postID]|
 |Join Group<br/>Open Group|グループに参加する<br/>グループを開く|line://ti/g/[GroupTicket]|
 |Jump to Message|メッセージに飛ぶ|line://nv/chatMsg?chatId=[groupID]&messageId=[MessageID]|
+|Share message|メッセージを共有する|line://msg/text/[URL_Encoded_Message]|
 
 ## Note
   * Post ID
