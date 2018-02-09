@@ -23,7 +23,7 @@
       Not only text.
   * Share Message
     * How to add new line is [here](https://rdlabo.jp/web_app-214.php) 
-  * Scheme List
+  * Scheme List
     * For official bots are in [here](https://developers.line.me/en/docs/messaging-api/using-line-url-scheme/)
       * Sadly line://oaMessage/{LINE_id}/?{text_message} can't use to normal user.
     * Some other schemes are in [here](https://uragadget.net/line/url_scheme_list)
