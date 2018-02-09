@@ -13,6 +13,6 @@ Examples are there in Examples folder.
   
 ## Group / 1 to 1
 * Custom announce
-  - Icon(Megaphone/Note), Title, URL can be changed.
+  - Icon, Title, URL, Lock, can be changed.
 * Custom music
   - Icon, Title, SubTitle, MusicID can be changed.
