@@ -1,5 +1,6 @@
 # OperationTypes
 Memo of LINE operations.
+
 ## 0:END_OF_OPERATION
  Operation End
  
@@ -74,9 +75,9 @@ Happen when Invite anyone to group.(by self)
 |message|||
 
 ## 13:NOTIFIED_INVITE_INTO_GROUP
-Happen when someone invited you to group.
-Or when someone invited other in Group that you joined.
-(自分が招待されたとき
+Happen when someone invited you to group.<br>
+Or when someone invited other in Group that you joined.<br>
+(自分が招待されたとき<br>
 および 自分の参加しているグループの誰かが誰かをグループに招待したとき)
  
 | Type | Value | Note |
@@ -146,10 +147,10 @@ Happen when someone kickouted in group that you joined.
 |param3|||
 |message|||
 
-20:CREATE_ROOM
-21:INVITE_INTO_ROOM
-22:NOTIFIED_INVITE_INTO_ROOM
-23:LEAVE_ROOM
+20:CREATE_ROOM<br>
+21:INVITE_INTO_ROOM<br>
+22:NOTIFIED_INVITE_INTO_ROOM<br>
+23:LEAVE_ROOM<br>
 24:NOTIFIED_LEAVE_ROOM
 
 ## 26:RECEIVE_MESSAGE
@@ -172,15 +173,15 @@ Happen when Announce Changed.
 |param3|'c' |c="Created", d="Deleted"|
 |message|None||
 
-31:CANCEL_INVITATION_GROUP
-32:NOTIFIED_CANCEL_INVITATION_GROUP
-34:REJECT_GROUP_INVITATION
-35:NOTIFIED_REJECT_GROUP_INVITATION
-40:SEND_CHAT_CHECKED
-41:SEND_CHAT_REMOVED
-50:NOTIFIED_RECEIVED_CALL
-51:CANCEL_CALL
-55:NOTIFIED_READ_MESSAGE
-62:FRIEND_REQUEST_ACCEPTED
-69:UPDATE_GROUPPREFERENCE
+31:CANCEL_INVITATION_GROUP<br>
+32:NOTIFIED_CANCEL_INVITATION_GROUP<br>
+34:REJECT_GROUP_INVITATION<br>
+35:NOTIFIED_REJECT_GROUP_INVITATION<br>
+40:SEND_CHAT_CHECKED<br>
+41:SEND_CHAT_REMOVED<br>
+50:NOTIFIED_RECEIVED_CALL<br>
+51:CANCEL_CALL<br>
+55:NOTIFIED_READ_MESSAGE<br>
+62:FRIEND_REQUEST_ACCEPTED<br>
+69:UPDATE_GROUPPREFERENCE<br>
 88:NOTIFIED_FRIEND_REQUEST
