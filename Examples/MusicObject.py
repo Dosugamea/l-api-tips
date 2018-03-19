@@ -7,13 +7,13 @@ from akad.ttypes import Message
 　I didn't check a-* because I don't have iPhone.
 '''
 cl = LINE(authtoken)
-my_music = Message()
-my_music.to = "SEND_TO(gid/mid)"
-my_music.contentType = 19
-sl.contentMetadata={
+music = Message()
+music.to = "SEND_TO(gid/mid)"
+music.contentType = 19
+music.contentMetadata={
   'text': 'songTitle',
   'subText': 'artistName',
-  'id': 'mt000000000a7546d5',
+  'id': 'mt000000000a6b79f9',
   'previewUrl': 'Thumbnail to be displayed',
   'linkUri': 'Other Link to be opened',
   'i-linkUri': 'iPhone Link to be opened(?)',
@@ -26,4 +26,4 @@ sl.contentMetadata={
   'ORGCONTP': 'MUSIC'
   }
 #LINE-PY's sendMessage is optimized for text, so have to send by Client".talk."
-cl.talk.sendMessage(0,msg)
+cl.talk.sendMessage(0,music)
