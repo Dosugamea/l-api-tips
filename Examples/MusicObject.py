@@ -4,7 +4,7 @@ from akad.ttypes import Message
 '''
 <Send Custom Music>
   Really Similar to Profile Music
-　I didn't check a-* because I don't have iPhone.
+　I didn't check i-* because I don't have iPhone.
 '''
 cl = LINE(authtoken)
 music = Message()
