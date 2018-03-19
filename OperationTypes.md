@@ -153,6 +153,16 @@ Happen when someone kickouted in group that you joined.
 23:LEAVE_ROOM<br>
 24:NOTIFIED_LEAVE_ROOM
 
+## 25:SEND_MESSAGE
+Happen when Send Message.(by self)
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|'0'|?|
+|param2|None||
+|param3|None||
+|message|Message()||
+
 ## 26:RECEIVE_MESSAGE
 Happen when Recieve Message.
  
@@ -164,7 +174,8 @@ Happen when Recieve Message.
 |message|Message()||
 
 ## 30:RECEIVE_ANNOUNCEMENT
-Happen when Announce Changed.
+Happen when Announce Changed.<br>
+Not verified but sometimes delay(?).
  
 | Type | Value | Note |
 |:---:|:-------:|:------:|
@@ -176,12 +187,32 @@ Happen when Announce Changed.
 31:CANCEL_INVITATION_GROUP<br>
 32:NOTIFIED_CANCEL_INVITATION_GROUP<br>
 34:REJECT_GROUP_INVITATION<br>
-35:NOTIFIED_REJECT_GROUP_INVITATION<br>
-40:SEND_CHAT_CHECKED<br>
+35:NOTIFIED_REJECT_GROUP_INVITATION
+
+## 40:SEND_CHAT_CHECKED
+Happen when you read message.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|'u406682701b0d659deXXXXXXXXXXXXXXX'|gid/mid/roomid(Read at)|
+|param2|'7649592103475'|LatestMessageID(Old Messages in same place be read too)|
+|param3|'0' | ? |
+|message|None||
+
 41:SEND_CHAT_REMOVED<br>
 50:NOTIFIED_RECEIVED_CALL<br>
-51:CANCEL_CALL<br>
-55:NOTIFIED_READ_MESSAGE<br>
+51:CANCEL_CALL
+
+## 55:NOTIFIED_READ_MESSAGE
+Happen when someone read your message.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|'u406682701b0d659deXXXXXXXXXXXXXXX'|gid/mid/roomid(Read at)|
+|param2|'u406682701b0d659deXXXXXXXXXXXXXXX'|mid(Read user)|
+|param3|'7652603206585'| MessageID |
+|message|None||
+
 62:FRIEND_REQUEST_ACCEPTED<br>
 69:UPDATE_GROUPPREFERENCE<br>
 88:NOTIFIED_FRIEND_REQUEST
