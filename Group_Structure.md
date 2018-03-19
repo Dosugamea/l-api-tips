@@ -5,15 +5,15 @@ Memo of Group.<br><br>
 |Key|Value|Note|
 |:---:|:---:|:---:|
 |name|'Bot実験室'|GroupName|
-|id|'c1a2ac5e38fb50f9ad82dc2XXXXXXXXXX'|GroupID|
+|id|'c1a2ac5e38fb50f9ad82dc2XXXXXXXXXX'|str GroupID|
 |createdTime|1498487244747|int Unix Group CreatedTime|
 |pictureStatus|'PicturePath'|str GroupPicturePath|
 |preventedJoinByTicket|False|True/False|
 |groupPreference|groupPreference()||
-|creator|Contact()||
-|members|List[Contact()]||
-|invitee|List[Contact()]||
-|notificationDisabled|False||
+|creator|Contact()|GroupCreatedUser|
+|members|List[Contact()]|GroupMembers|
+|invitee|List[Contact()]|InvitingUsers|
+|notificationDisabled|False|True/False|
 
 ## groupPreference
 |Key|Value|Note|
