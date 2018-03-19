@@ -33,6 +33,125 @@ Happen when Add as Contact.
 |param3|None||
 |message|None||
 
+## 9:CREATE_GROUP
+Happen when Create Group(by self)
+ 
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 10:UPDATE_GROUP
+Happen when Group Update(by self)
+ 
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 11:NOTIFIED_UPDATE_GROUP
+Happen when Group Updated
+ 
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 12:INVITE_INTO_GROUP
+Happen when Invite anyone to group.(by self)
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 13:NOTIFIED_INVITE_INTO_GROUP
+Happen when someone invited you to group.
+Or when someone invited other in Group that you joined.
+(自分が招待されたとき
+および 自分の参加しているグループの誰かが誰かをグループに招待したとき)
+ 
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 14:LEAVE_GROUP
+Happen when you leave.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 15:NOTIFIED_LEAVE_GROUP
+Happen when anyone leave from group that you joined.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 16:ACCEPT_GROUP_INVITATION
+Happen when you join to group.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 17:NOTIFIED_ACCEPT_GROUP_INVITATION
+Happen when someone join to group that you joined.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 18:KICKOUT_FROM_GROUP
+Happen when you kickout someone.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+## 19:NOTIFIED_KICKOUT_FROM_GROUP
+Happen when someone kickouted in group that you joined.
+
+| Type | Value | Note |
+|:---:|:-------:|:------:|
+|param1|||
+|param2|||
+|param3|||
+|message|||
+
+20:CREATE_ROOM
+21:INVITE_INTO_ROOM
+22:NOTIFIED_INVITE_INTO_ROOM
+23:LEAVE_ROOM
+24:NOTIFIED_LEAVE_ROOM
+
 ## 26:RECEIVE_MESSAGE
 Happen when Recieve Message.
  
@@ -52,3 +171,16 @@ Happen when Announce Changed.
 |param2|'219'|AnnounceID|
 |param3|'c' |c="Created", d="Deleted"|
 |message|None||
+
+31:CANCEL_INVITATION_GROUP
+32:NOTIFIED_CANCEL_INVITATION_GROUP
+34:REJECT_GROUP_INVITATION
+35:NOTIFIED_REJECT_GROUP_INVITATION
+40:SEND_CHAT_CHECKED
+41:SEND_CHAT_REMOVED
+50:NOTIFIED_RECEIVED_CALL
+51:CANCEL_CALL
+55:NOTIFIED_READ_MESSAGE
+62:FRIEND_REQUEST_ACCEPTED
+69:UPDATE_GROUPPREFERENCE
+88:NOTIFIED_FRIEND_REQUEST
