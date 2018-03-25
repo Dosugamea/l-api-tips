@@ -1,8 +1,8 @@
 '''
 <Send Gift Object>
-  This can send Gift to specify place.
-  productId can be got from LINE GIFT(actually have to pay)
-  Used productId can be sent, but can't get actually.
+  This can send Gift for specific place.
+  productId can be got from LINE GIFT object (actually have to buy gift)
+  Used product's Id can be sent, but can't get actually.
 '''
 
 cl = LINE(authtoken)
