@@ -4,7 +4,7 @@ from akad.ttypes import Message
 '''
 <Send Custom Music>
   Really Similar to Profile Music
-　I didn't check i-* because I don't have iPhone.
+　
 '''
 cl = LINE(authtoken)
 music = Message()
@@ -27,3 +27,14 @@ music.contentMetadata={
   }
 #LINE-PY's sendMessage is optimized for text, so have to send by Client".talk."
 cl.talk.sendMessage(0,music)
+
+
+
+'''
+# Add to linepy/talk.py
+
+@loggedIn
+def sendMusicObject(self, to, contentMetadata):
+    return self.sendMessage(to, '', contentMetadata, 19)
+
+'''
