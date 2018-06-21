@@ -20,3 +20,10 @@ Memo of Group.<br><br>
 |:---:|:---:|:---:|
 |invitationTicket|None|(str maybe Ticket when you made GroupURL)|
 |favoriteTimestamp|None|(int maybe TimeStamp that you favorited group)|
+
+## Note
+### How to convert createdTime to datetime<br>
+from datetime import datetime<br>
+gr = cl.getGroup(gid)<br>
+dt = datetime.fromtimestamp(int(gr.createdTime[:-3])))<br>
+print("GroupCreatedTime : %s"%(dt))
